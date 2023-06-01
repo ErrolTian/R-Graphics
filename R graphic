@@ -1,0 +1,18 @@
+> install.packages('dplyr')
+The downloaded binary packages are in
+	/var/folders/w1/ffj9glgd1gx7jm6qqbldtyh80000gn/T//RtmpTEpKY1/downloaded_packages
+> library('dplyr')
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:  #是说此package（dplyr）中以下的function在package：stats中也有，不知道用哪个。
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+---
+到时这样用就行了
+stats::lag(1:5, 2)        # Applying lag function of stats package
+dplyr::lag(1:5, 2)        # Applying lag function of dplyr package
